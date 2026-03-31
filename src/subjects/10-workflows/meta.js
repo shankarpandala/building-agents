@@ -1,0 +1,51 @@
+export const subject = {
+  id: 'workflows',
+  title: 'Reusable Workflows',
+  description: 'Packaging agent expertise into repeatable, shareable patterns — skills, automation, and scheduled execution.',
+  icon: '🔄',
+  colorHex: '#ca8a04',
+  difficulty: 'intermediate',
+  estimatedHours: 8,
+  prerequisites: ['tools', 'prompt-engineering'],
+  chapters: [
+    {
+      id: 'c1-skill-concept',
+      title: 'The Skill Concept',
+      description: 'What skills are and why packaging workflows matters.',
+      difficulty: 'intermediate',
+      estimatedMinutes: 80,
+      sections: [
+        { id: 's1-what-is-skill', title: 'What Is a Skill', description: 'Bundled knowledge, tools, and workflow — reusable agent expertise.', difficulty: 'intermediate', readingMinutes: 10 },
+        { id: 's2-identifying-patterns', title: 'Identifying Patterns Worth Packaging', description: 'When a workflow is repeated enough to deserve its own name and structure.', difficulty: 'intermediate', readingMinutes: 10 },
+        { id: 's3-builtin-vs-custom', title: 'Built-In vs Custom Skills', description: 'What comes out of the box vs what you build for your specific domain.', difficulty: 'intermediate', readingMinutes: 10 },
+        { id: 's4-skill-invocation', title: 'Skill Invocation', description: 'Making complex workflows feel simple — slash commands and natural language triggers.', difficulty: 'intermediate', readingMinutes: 10 },
+      ],
+    },
+    {
+      id: 'c2-designing-skills',
+      title: 'Designing Skills',
+      description: 'How to create effective, composable, parameterized skills.',
+      difficulty: 'intermediate',
+      estimatedMinutes: 80,
+      sections: [
+        { id: 's1-parameterized-templates', title: 'Parameterized Templates', description: 'Skills that adapt to input — flexible prompts with variable slots.', difficulty: 'intermediate', readingMinutes: 10 },
+        { id: 's2-tool-requirements', title: 'Tool Requirements', description: 'What a skill needs to function — declaring tool dependencies upfront.', difficulty: 'intermediate', readingMinutes: 10 },
+        { id: 's3-composing-skills', title: 'Composing Skills', description: 'Building complex workflows from simple ones — skill chains and nesting.', difficulty: 'advanced', readingMinutes: 12 },
+        { id: 's4-domain-skills', title: 'Skills for Common Domains', description: 'Debugging, reviewing, refactoring — skills that every developer agent needs.', difficulty: 'intermediate', readingMinutes: 10 },
+      ],
+    },
+    {
+      id: 'c3-automation',
+      title: 'Automation and Scheduling',
+      description: 'Agents that run on timers, respond to events, and integrate into pipelines.',
+      difficulty: 'advanced',
+      estimatedMinutes: 80,
+      sections: [
+        { id: 's1-scheduled-agents', title: 'Scheduled Agents', description: 'Running on a timer — cron-based recurring agent execution.', difficulty: 'intermediate', readingMinutes: 10 },
+        { id: 's2-event-driven', title: 'Event-Driven Agents', description: 'Responding to external triggers — webhooks, PR events, and system signals.', difficulty: 'advanced', readingMinutes: 12 },
+        { id: 's3-hook-automation', title: 'Hook-Based Automation', description: 'Pre and post action callbacks — running logic before or after agent actions.', difficulty: 'advanced', readingMinutes: 12 },
+        { id: 's4-ci-agents', title: 'Agents in Continuous Integration', description: 'Automating development workflows — agents as CI pipeline participants.', difficulty: 'advanced', readingMinutes: 10 },
+      ],
+    },
+  ],
+}

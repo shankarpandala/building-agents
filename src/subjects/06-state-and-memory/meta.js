@@ -1,0 +1,52 @@
+export const subject = {
+  id: 'state-and-memory',
+  title: 'State and Memory',
+  description: 'How agents remember, forget, and persist knowledge — from in-session state to long-lived project and user memory.',
+  icon: '🧠',
+  colorHex: '#16a34a',
+  difficulty: 'intermediate',
+  estimatedHours: 10,
+  prerequisites: ['agent-runtime'],
+  chapters: [
+    {
+      id: 'c1-session-state',
+      title: 'In-Session State',
+      description: 'What the agent knows right now — conversation history, app state, and derived values.',
+      difficulty: 'intermediate',
+      estimatedMinutes: 80,
+      sections: [
+        { id: 's1-conversation-history', title: 'Conversation History', description: 'The agent short-term memory — what just happened in this session.', difficulty: 'intermediate', readingMinutes: 10 },
+        { id: 's2-application-state', title: 'Application State', description: 'The global mutable state that tracks settings, tasks, and runtime context.', difficulty: 'intermediate', readingMinutes: 10 },
+        { id: 's3-derived-state', title: 'Derived State', description: 'Computing answers from existing knowledge — selectors and computed values.', difficulty: 'intermediate', readingMinutes: 10 },
+        { id: 's4-side-effects', title: 'State Changes and Side Effects', description: 'When one change triggers another — reactive state patterns.', difficulty: 'intermediate', readingMinutes: 12 },
+      ],
+    },
+    {
+      id: 'c2-persistent-memory',
+      title: 'Persistent Memory',
+      description: 'Knowledge that outlives a single session — project, user, and team memory.',
+      difficulty: 'intermediate',
+      estimatedMinutes: 100,
+      sections: [
+        { id: 's1-project-memory', title: 'Project Memory', description: 'Knowledge tied to a specific workspace — conventions, patterns, and context.', difficulty: 'intermediate', readingMinutes: 10 },
+        { id: 's2-user-memory', title: 'User Memory', description: 'Preferences that follow a person everywhere — personal settings and habits.', difficulty: 'intermediate', readingMinutes: 10 },
+        { id: 's3-team-memory', title: 'Team Memory', description: 'Shared knowledge across collaborators — conventions that whole teams agree on.', difficulty: 'intermediate', readingMinutes: 10 },
+        { id: 's4-memory-hierarchy', title: 'Memory Hierarchy', description: 'Which memory wins when they conflict — resolution order and overrides.', difficulty: 'advanced', readingMinutes: 12 },
+        { id: 's5-auto-extracted', title: 'Auto-Extracted Memory', description: 'Learning from conversations automatically — extracting reusable knowledge.', difficulty: 'advanced', readingMinutes: 12 },
+      ],
+    },
+    {
+      id: 'c3-sessions',
+      title: 'Sessions and Continuity',
+      description: 'Tracking conversations over time — identity, transcripts, resumption, and long runs.',
+      difficulty: 'intermediate',
+      estimatedMinutes: 80,
+      sections: [
+        { id: 's1-session-identity', title: 'Session Identity', description: 'Tracking a conversation over time — IDs, timestamps, and metadata.', difficulty: 'intermediate', readingMinutes: 10 },
+        { id: 's2-transcripts', title: 'Transcripts', description: 'Recording everything for replay and debugging — the audit trail.', difficulty: 'intermediate', readingMinutes: 10 },
+        { id: 's3-resuming', title: 'Resuming a Session', description: 'Rebuilding context from storage — picking up where you left off.', difficulty: 'intermediate', readingMinutes: 12 },
+        { id: 's4-long-running', title: 'Long-Running Agents', description: 'Maintaining coherence over hours and days — the challenge of continuity.', difficulty: 'advanced', readingMinutes: 12 },
+      ],
+    },
+  ],
+}

@@ -1,0 +1,53 @@
+export const subject = {
+  id: 'teams-coordination',
+  title: 'Teams and Coordination',
+  description: 'From solo agents to coordinated squads — team architecture, communication patterns, and swarm intelligence.',
+  icon: '👥',
+  colorHex: '#a855f7',
+  difficulty: 'advanced',
+  estimatedHours: 12,
+  prerequisites: ['delegation'],
+  chapters: [
+    {
+      id: 'c1-team-architecture',
+      title: 'Team Architecture',
+      description: 'Roles, structure, and lifecycle of agent teams.',
+      difficulty: 'advanced',
+      estimatedMinutes: 80,
+      sections: [
+        { id: 's1-what-is-team', title: 'What Is an Agent Team', description: 'Roles, structure, and purpose — why teams exist in multi-agent systems.', difficulty: 'intermediate', readingMinutes: 10 },
+        { id: 's2-team-lead', title: 'The Team Lead', description: 'Orchestration and authority — the agent that coordinates the others.', difficulty: 'advanced', readingMinutes: 12 },
+        { id: 's3-teammates', title: 'Teammates', description: 'Parallel workers with complementary skills — the power of specialization.', difficulty: 'advanced', readingMinutes: 10 },
+        { id: 's4-team-lifecycle', title: 'Team Formation and Dissolution', description: 'Creating teams on demand and cleaning them up when done.', difficulty: 'advanced', readingMinutes: 10 },
+      ],
+    },
+    {
+      id: 'c2-communication',
+      title: 'Communication Patterns',
+      description: 'How agents talk to each other — messaging, broadcasting, and approval flows.',
+      difficulty: 'advanced',
+      estimatedMinutes: 100,
+      sections: [
+        { id: 's1-point-to-point', title: 'Point-to-Point', description: 'Direct agent-to-agent messages — the simplest communication pattern.', difficulty: 'advanced', readingMinutes: 10 },
+        { id: 's2-broadcast', title: 'Broadcast', description: 'Announcing to all team members — one message, many recipients.', difficulty: 'advanced', readingMinutes: 10 },
+        { id: 's3-async-mailboxes', title: 'Asynchronous Mailboxes', description: 'Messages that wait until read — decoupling sender and receiver in time.', difficulty: 'advanced', readingMinutes: 12 },
+        { id: 's4-approval-flows', title: 'Approval Flows', description: 'Structured request-confirm-execute patterns — agents that ask permission.', difficulty: 'advanced', readingMinutes: 10 },
+        { id: 's5-shutdown-protocols', title: 'Shutdown Protocols', description: 'Coordinated graceful termination — winding down a team safely.', difficulty: 'advanced', readingMinutes: 10 },
+      ],
+    },
+    {
+      id: 'c3-swarm',
+      title: 'Swarm Intelligence',
+      description: 'Many agents, one emergent goal — backends, identity, and conflict resolution.',
+      difficulty: 'advanced',
+      estimatedMinutes: 100,
+      sections: [
+        { id: 's1-what-is-swarm', title: 'What Is a Swarm', description: 'Many agents pursuing one emergent goal — collective intelligence in practice.', difficulty: 'advanced', readingMinutes: 10 },
+        { id: 's2-execution-backends', title: 'Execution Backends', description: 'Where agents actually run — in-process, terminal panes, and split windows.', difficulty: 'advanced', readingMinutes: 12 },
+        { id: 's3-identity-visibility', title: 'Identity and Visibility', description: 'Naming, coloring, and tracking agents — knowing who is doing what.', difficulty: 'advanced', readingMinutes: 10 },
+        { id: 's4-shared-state', title: 'Shared State', description: 'How swarm members stay in sync — shared memory and coordination primitives.', difficulty: 'advanced', readingMinutes: 12 },
+        { id: 's5-conflict-resolution', title: 'Conflict Resolution', description: 'When agents disagree — merging conflicting changes and resolving disputes.', difficulty: 'advanced', readingMinutes: 12 },
+      ],
+    },
+  ],
+}

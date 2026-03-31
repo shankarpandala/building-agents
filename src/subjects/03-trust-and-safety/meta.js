@@ -1,0 +1,53 @@
+export const subject = {
+  id: 'trust-and-safety',
+  title: 'Trust and Safety',
+  description: 'The guardrails that make autonomous agents safe — permission models, blast radius, and designing for safety.',
+  icon: '🛡️',
+  colorHex: '#dc2626',
+  difficulty: 'beginner',
+  estimatedHours: 8,
+  prerequisites: ['thinking-in-agents'],
+  chapters: [
+    {
+      id: 'c1-safety-problem',
+      title: 'The Safety Problem',
+      description: 'Why autonomous systems need boundaries and how to think about risk.',
+      difficulty: 'beginner',
+      estimatedMinutes: 80,
+      sections: [
+        { id: 's1-why-boundaries', title: 'Why Autonomous Systems Need Boundaries', description: 'The fundamental tension between autonomy and safety.', difficulty: 'beginner', readingMinutes: 10 },
+        { id: 's2-blast-radius', title: 'Blast Radius', description: 'Understanding the consequences of agent mistakes — from harmless to catastrophic.', difficulty: 'beginner', readingMinutes: 12 },
+        { id: 's3-reversible-irreversible', title: 'Reversible vs Irreversible Actions', description: 'A critical distinction that shapes how much freedom agents should have.', difficulty: 'beginner', readingMinutes: 10 },
+        { id: 's4-cost-asking-vs-acting', title: 'The Cost of Asking vs Acting Wrong', description: 'Why pausing to confirm is almost always cheaper than recovering from a mistake.', difficulty: 'beginner', readingMinutes: 10 },
+      ],
+    },
+    {
+      id: 'c2-permission-models',
+      title: 'Permission Models',
+      description: 'Different approaches to controlling what agents can and cannot do.',
+      difficulty: 'intermediate',
+      estimatedMinutes: 100,
+      sections: [
+        { id: 's1-ask-every-time', title: 'Ask Every Time', description: 'Maximum safety, minimum autonomy — the default safe mode.', difficulty: 'beginner', readingMinutes: 10 },
+        { id: 's2-plan-then-execute', title: 'Plan-Then-Execute', description: 'Approve a batch of actions, then let the agent run them all.', difficulty: 'intermediate', readingMinutes: 10 },
+        { id: 's3-rule-based', title: 'Rule-Based Auto-Approval', description: 'Pattern matching for trust — wildcards and allow-lists.', difficulty: 'intermediate', readingMinutes: 12 },
+        { id: 's4-classifier-based', title: 'Classifier-Based Approval', description: 'Letting machines judge risk — automated permission decisions.', difficulty: 'advanced', readingMinutes: 10 },
+        { id: 's5-full-trust', title: 'Full Trust', description: 'When guardrails come down — understanding the risks and valid use cases.', difficulty: 'intermediate', readingMinutes: 10 },
+      ],
+    },
+    {
+      id: 'c3-designing-safety',
+      title: 'Designing for Safety',
+      description: 'Practical patterns for building agents that are safe by default.',
+      difficulty: 'intermediate',
+      estimatedMinutes: 100,
+      sections: [
+        { id: 's1-least-privilege', title: 'Least Privilege', description: 'Give agents only what they need — no more, no less.', difficulty: 'intermediate', readingMinutes: 10 },
+        { id: 's2-fail-closed', title: 'Fail-Closed', description: 'When in doubt, ask — the principle of defaulting to safety.', difficulty: 'intermediate', readingMinutes: 10 },
+        { id: 's3-human-in-loop', title: 'Human-in-the-Loop', description: 'Strategic checkpoints for risky actions — when to pause and ask.', difficulty: 'intermediate', readingMinutes: 12 },
+        { id: 's4-sandboxing', title: 'Sandboxing', description: 'Containing agent actions within safe boundaries — isolation strategies.', difficulty: 'intermediate', readingMinutes: 10 },
+        { id: 's5-secrets-sensitive', title: 'Secrets and Sensitive Data', description: 'What agents must never touch — credentials, keys, and private information.', difficulty: 'intermediate', readingMinutes: 10 },
+      ],
+    },
+  ],
+}

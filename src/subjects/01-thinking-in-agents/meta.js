@@ -1,0 +1,52 @@
+export const subject = {
+  id: 'thinking-in-agents',
+  title: 'Thinking in Agents',
+  description: 'The mental shift from tools that respond to systems that act — understanding perception, reasoning, action, and grounding.',
+  icon: '🤖',
+  colorHex: '#4f6bed',
+  difficulty: 'beginner',
+  estimatedHours: 8,
+  prerequisites: [],
+  chapters: [
+    {
+      id: 'c1-agent-paradigm',
+      title: 'The Agent Paradigm',
+      description: 'What distinguishes an agent from a chatbot and why it matters.',
+      difficulty: 'beginner',
+      estimatedMinutes: 80,
+      sections: [
+        { id: 's1-what-makes-agent', title: 'What Makes Something an Agent', description: 'Perception, reasoning, and action as the three pillars of agency.', difficulty: 'beginner', readingMinutes: 12 },
+        { id: 's2-autonomy-spectrum', title: 'The Autonomy Spectrum', description: 'From autocomplete to fully autonomous — where agents sit on the scale.', difficulty: 'beginner', readingMinutes: 10 },
+        { id: 's3-agents-vs-assistants', title: 'Agents vs Assistants vs Copilots', description: 'Clarifying the landscape of AI systems that help humans.', difficulty: 'beginner', readingMinutes: 10 },
+        { id: 's4-when-you-need-agent', title: 'When You Need an Agent', description: 'Decision framework for when autonomous agents add value and when simpler solutions suffice.', difficulty: 'beginner', readingMinutes: 10 },
+      ],
+    },
+    {
+      id: 'c2-agent-loop',
+      title: 'The Agent Loop',
+      description: 'The universal sense-think-act cycle that drives all agent behavior.',
+      difficulty: 'beginner',
+      estimatedMinutes: 100,
+      sections: [
+        { id: 's1-sense-think-act', title: 'Sense-Think-Act', description: 'The universal agent cycle that turns observation into action.', difficulty: 'beginner', readingMinutes: 12 },
+        { id: 's2-observation', title: 'Observation', description: 'How agents perceive their environment through tool results, user input, and system signals.', difficulty: 'beginner', readingMinutes: 10 },
+        { id: 's3-reasoning', title: 'Reasoning', description: 'How agents decide what to do next — planning, decomposition, and inference.', difficulty: 'beginner', readingMinutes: 12 },
+        { id: 's4-action', title: 'Action', description: 'How agents change the world — executing tools, writing files, sending messages.', difficulty: 'beginner', readingMinutes: 10 },
+        { id: 's5-feedback-loop', title: 'The Feedback Loop', description: 'How action results feed back into observation, enabling iterative refinement.', difficulty: 'beginner', readingMinutes: 10 },
+      ],
+    },
+    {
+      id: 'c3-grounding',
+      title: 'Grounding Agents in Reality',
+      description: 'Connecting language to real actions and preventing hallucination.',
+      difficulty: 'beginner',
+      estimatedMinutes: 80,
+      sections: [
+        { id: 's1-language-action-gap', title: 'The Gap Between Language and Action', description: 'Why generating text is not the same as doing work in the real world.', difficulty: 'beginner', readingMinutes: 10 },
+        { id: 's2-grounding-tools', title: 'Grounding Through Tools', description: 'How tools give agents the ability to touch and change their environment.', difficulty: 'beginner', readingMinutes: 12 },
+        { id: 's3-grounding-context', title: 'Grounding Through Context', description: 'How situational awareness keeps agents aligned with reality.', difficulty: 'beginner', readingMinutes: 10 },
+        { id: 's4-hallucination-drift', title: 'Hallucination and Drift', description: 'When agents lose touch with reality and how to detect and prevent it.', difficulty: 'intermediate', readingMinutes: 12 },
+      ],
+    },
+  ],
+}

@@ -1,0 +1,51 @@
+export const subject = {
+  id: 'protocols',
+  title: 'Protocols and Interoperability',
+  description: 'Standards that let agents connect to anything — universal protocols, discovery, authentication, and loose coupling.',
+  icon: '🔌',
+  colorHex: '#0d9488',
+  difficulty: 'advanced',
+  estimatedHours: 10,
+  prerequisites: ['tools', 'teams-coordination'],
+  chapters: [
+    {
+      id: 'c1-interoperability',
+      title: 'The Interoperability Problem',
+      description: 'Why every system speaks a different language and the case for standards.',
+      difficulty: 'intermediate',
+      estimatedMinutes: 80,
+      sections: [
+        { id: 's1-tool-fragmentation', title: 'Tool Fragmentation', description: 'Why every system speaks a different language and the cost of incompatibility.', difficulty: 'intermediate', readingMinutes: 10 },
+        { id: 's2-universal-protocol', title: 'The Case for a Universal Protocol', description: 'Why one standard protocol unlocks exponential value for agent ecosystems.', difficulty: 'intermediate', readingMinutes: 12 },
+        { id: 's3-client-server', title: 'Client-Server Architecture', description: 'Providers and consumers — the fundamental relationship in tool protocols.', difficulty: 'intermediate', readingMinutes: 10 },
+        { id: 's4-runtime-discovery', title: 'Discovery', description: 'Finding what is available at runtime — dynamic capability advertisement.', difficulty: 'intermediate', readingMinutes: 10 },
+      ],
+    },
+    {
+      id: 'c2-connecting',
+      title: 'Connecting to External Systems',
+      description: 'Consuming and exposing tools across system boundaries.',
+      difficulty: 'advanced',
+      estimatedMinutes: 80,
+      sections: [
+        { id: 's1-consuming-tools', title: 'Consuming External Tools', description: 'Using tools provided by other systems through a standardized protocol.', difficulty: 'advanced', readingMinutes: 10 },
+        { id: 's2-exposing-capabilities', title: 'Exposing Your Agent Capabilities', description: 'Making your agent tools available to other systems and agents.', difficulty: 'advanced', readingMinutes: 12 },
+        { id: 's3-auth-across-boundaries', title: 'Authentication Across Boundaries', description: 'Identity, tokens, and trust — proving who you are across systems.', difficulty: 'advanced', readingMinutes: 10 },
+        { id: 's4-handling-large-responses', title: 'Handling Large Responses', description: 'What to do when external systems return too much data — summarization and collapse.', difficulty: 'advanced', readingMinutes: 10 },
+      ],
+    },
+    {
+      id: 'c3-protocol-design',
+      title: 'Protocol Design Principles',
+      description: 'How to design protocols that evolve without breaking.',
+      difficulty: 'advanced',
+      estimatedMinutes: 80,
+      sections: [
+        { id: 's1-loose-coupling', title: 'Loose Coupling', description: 'Changing one side without breaking the other — the key to maintainable integrations.', difficulty: 'advanced', readingMinutes: 10 },
+        { id: 's2-resource-discovery', title: 'Resource Discovery', description: 'Advertising capabilities dynamically — letting consumers find what they need.', difficulty: 'advanced', readingMinutes: 10 },
+        { id: 's3-permission-bridging', title: 'Permission Bridging', description: 'Propagating trust across system boundaries — who is allowed to do what where.', difficulty: 'advanced', readingMinutes: 12 },
+        { id: 's4-versioning', title: 'Versioning and Compatibility', description: 'Evolving protocols without breaking existing consumers.', difficulty: 'advanced', readingMinutes: 10 },
+      ],
+    },
+  ],
+}
