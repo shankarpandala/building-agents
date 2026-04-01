@@ -98,7 +98,6 @@ export default function Navbar({ onToggleSidebar, sidebarOpen }) {
 
           <a
             href="https://www.pandala.in"
-            target="_blank"
             rel="noopener noreferrer"
             className="flex items-center font-mono text-sm text-gray-500 dark:text-gray-500 hover:opacity-80 transition-opacity select-none"
           >
