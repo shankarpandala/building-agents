@@ -1,0 +1,53 @@
+export const subject = {
+  id: 'prompt-engineering',
+  title: 'Prompt Engineering for Agents',
+  description: 'The system prompt is the agent DNA — defining identity, capabilities, constraints, and how to manage the finite context window.',
+  icon: '📝',
+  colorHex: '#ea580c',
+  difficulty: 'intermediate',
+  estimatedHours: 10,
+  prerequisites: ['thinking-in-agents', 'agent-runtime'],
+  chapters: [
+    {
+      id: 'c1-system-prompt',
+      title: 'System Prompt Architecture',
+      description: 'Designing the system prompt that shapes everything an agent does.',
+      difficulty: 'intermediate',
+      estimatedMinutes: 100,
+      sections: [
+        { id: 's1-identity', title: 'Identity', description: 'Defining who the agent is — name, role, personality, and boundaries.', difficulty: 'intermediate', readingMinutes: 10 },
+        { id: 's2-capabilities', title: 'Capabilities', description: 'Telling the agent what it can do — tools, skills, and areas of expertise.', difficulty: 'intermediate', readingMinutes: 12 },
+        { id: 's3-constraints', title: 'Constraints', description: 'Telling the agent what it must not do — safety rails in the prompt.', difficulty: 'intermediate', readingMinutes: 10 },
+        { id: 's4-tone-style', title: 'Tone and Style', description: 'Shaping how the agent communicates — concise, formal, friendly, or technical.', difficulty: 'beginner', readingMinutes: 10 },
+        { id: 's5-dynamic-prompts', title: 'Dynamic Prompts', description: 'Instructions that change with context — adapting behavior at runtime.', difficulty: 'advanced', readingMinutes: 12 },
+      ],
+    },
+    {
+      id: 'c2-routing-intent',
+      title: 'Routing and Intent',
+      description: 'How agents understand what the user wants and match it to capabilities.',
+      difficulty: 'intermediate',
+      estimatedMinutes: 80,
+      sections: [
+        { id: 's1-understanding-intent', title: 'Understanding User Intent', description: 'What does the user actually want? Reading between the lines.', difficulty: 'intermediate', readingMinutes: 10 },
+        { id: 's2-matching-capabilities', title: 'Matching Intent to Capabilities', description: 'Scoring and ranking — how agents pick the best response strategy.', difficulty: 'intermediate', readingMinutes: 12 },
+        { id: 's3-disambiguation', title: 'Disambiguation', description: 'When multiple interpretations exist — asking vs guessing.', difficulty: 'intermediate', readingMinutes: 10 },
+        { id: 's4-fallback-strategies', title: 'Fallback Strategies', description: 'When no capability matches — graceful degradation and honest limits.', difficulty: 'intermediate', readingMinutes: 10 },
+      ],
+    },
+    {
+      id: 'c3-context-window',
+      title: 'Context Window Strategy',
+      description: 'Managing the finite memory that shapes everything an agent can consider.',
+      difficulty: 'advanced',
+      estimatedMinutes: 100,
+      sections: [
+        { id: 's1-what-goes-in', title: 'What Goes Into the Context Window', description: 'System prompt, history, tool results — understanding the budget.', difficulty: 'intermediate', readingMinutes: 10 },
+        { id: 's2-tool-contributed', title: 'Tool-Contributed Prompts', description: 'Tools adding their own instructions to the system prompt dynamically.', difficulty: 'advanced', readingMinutes: 12 },
+        { id: 's3-priority', title: 'Priority', description: 'What to keep when space runs out — a hierarchy of importance.', difficulty: 'advanced', readingMinutes: 10 },
+        { id: 's4-sliding-window', title: 'The Sliding Window', description: 'Keeping recent context while dropping old — the moving frame of memory.', difficulty: 'intermediate', readingMinutes: 10 },
+        { id: 's5-information-density', title: 'Information Density', description: 'Saying more with less — concise prompts that maximize signal.', difficulty: 'advanced', readingMinutes: 12 },
+      ],
+    },
+  ],
+}

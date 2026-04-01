@@ -1,0 +1,53 @@
+export const subject = {
+  id: 'tools',
+  title: 'Tools — Extending Agent Capabilities',
+  description: 'Tools transform language models from thinkers into doers. Learn to design, compose, and manage the capabilities agents rely on.',
+  icon: '🔧',
+  colorHex: '#0891b2',
+  difficulty: 'beginner',
+  estimatedHours: 10,
+  prerequisites: ['thinking-in-agents'],
+  chapters: [
+    {
+      id: 'c1-philosophy-of-tools',
+      title: 'The Philosophy of Tools',
+      description: 'Why tools exist and what makes them effective for agents.',
+      difficulty: 'beginner',
+      estimatedMinutes: 80,
+      sections: [
+        { id: 's1-why-tools', title: 'Why Language Models Need Tools', description: 'The fundamental limitation of text generation and how tools bridge the gap.', difficulty: 'beginner', readingMinutes: 10 },
+        { id: 's2-good-tool', title: 'What Makes a Good Tool', description: 'Atomic, predictable, observable — the three qualities of effective agent tools.', difficulty: 'beginner', readingMinutes: 12 },
+        { id: 's3-tool-categories', title: 'Categories of Tools', description: 'Reading, writing, executing, searching, and communicating — the five families.', difficulty: 'beginner', readingMinutes: 10 },
+        { id: 's4-tool-contract', title: 'The Tool as a Contract', description: 'Inputs, execution, outputs, and side effects — the promises a tool makes.', difficulty: 'beginner', readingMinutes: 10 },
+      ],
+    },
+    {
+      id: 'c2-tool-design',
+      title: 'Tool Design Principles',
+      description: 'How to design tools that agents can discover, understand, and use correctly.',
+      difficulty: 'intermediate',
+      estimatedMinutes: 100,
+      sections: [
+        { id: 's1-naming-description', title: 'Naming and Description', description: 'How agents discover what is available — the importance of clear tool metadata.', difficulty: 'beginner', readingMinutes: 10 },
+        { id: 's2-input-schemas', title: 'Input Schemas', description: 'Guiding correct tool usage through structured, typed parameters.', difficulty: 'intermediate', readingMinutes: 12 },
+        { id: 's3-output-design', title: 'Output Design', description: 'Crafting results an agent can reason about — structured, concise, actionable.', difficulty: 'intermediate', readingMinutes: 10 },
+        { id: 's4-idempotency', title: 'Idempotency', description: 'Why repeating a tool call should be safe and how to design for it.', difficulty: 'intermediate', readingMinutes: 10 },
+        { id: 's5-granularity', title: 'Granularity — One Tool, One Job', description: 'The right level of abstraction — neither too broad nor too narrow.', difficulty: 'intermediate', readingMinutes: 10 },
+      ],
+    },
+    {
+      id: 'c3-tool-composition',
+      title: 'Tool Selection and Composition',
+      description: 'How agents choose, chain, and compose tools to accomplish complex tasks.',
+      difficulty: 'intermediate',
+      estimatedMinutes: 100,
+      sections: [
+        { id: 's1-choosing-right-tool', title: 'How an Agent Chooses the Right Tool', description: 'The decision process behind tool selection — matching capability to intent.', difficulty: 'intermediate', readingMinutes: 10 },
+        { id: 's2-sequential-composition', title: 'Sequential Composition', description: 'When order creates meaning — tools that must run one after another.', difficulty: 'intermediate', readingMinutes: 10 },
+        { id: 's3-parallel-composition', title: 'Parallel Composition', description: 'When independence enables speed — running multiple tools simultaneously.', difficulty: 'intermediate', readingMinutes: 10 },
+        { id: 's4-tool-chaining', title: 'Tool Chaining', description: 'Output of one tool becomes input of another — building pipelines of action.', difficulty: 'intermediate', readingMinutes: 10 },
+        { id: 's5-graceful-failure', title: 'Graceful Failure', description: 'What happens when a tool breaks and how agents should recover.', difficulty: 'intermediate', readingMinutes: 12 },
+      ],
+    },
+  ],
+}

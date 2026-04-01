@@ -1,0 +1,51 @@
+export const subject = {
+  id: 'integration',
+  title: 'Integration Patterns',
+  description: 'Embedding agents into real environments — IDE bridges, remote execution, and plugin architectures.',
+  icon: '🔗',
+  colorHex: '#e04e17',
+  difficulty: 'advanced',
+  estimatedHours: 10,
+  prerequisites: ['protocols', 'workflows'],
+  chapters: [
+    {
+      id: 'c1-ide-integration',
+      title: 'IDE Integration',
+      description: 'Connecting agents to code editors through bidirectional bridges.',
+      difficulty: 'advanced',
+      estimatedMinutes: 80,
+      sections: [
+        { id: 's1-bridge-pattern', title: 'The Bridge Pattern', description: 'Bidirectional communication with editors — messages flowing both ways.', difficulty: 'advanced', readingMinutes: 12 },
+        { id: 's2-permission-delegation', title: 'Permission Delegation', description: 'Letting the host environment decide — the IDE as permission authority.', difficulty: 'advanced', readingMinutes: 10 },
+        { id: 's3-inline-vs-external', title: 'Inline vs External', description: 'Agents inside the editor vs alongside it — tradeoffs of each approach.', difficulty: 'intermediate', readingMinutes: 10 },
+        { id: 's4-interactive-sessions', title: 'Interactive Sessions', description: 'REPL-style agent conversations — interactive loops within an editor.', difficulty: 'advanced', readingMinutes: 10 },
+      ],
+    },
+    {
+      id: 'c2-remote',
+      title: 'Remote and Distributed Agents',
+      description: 'Agents running across network boundaries — tunneling, adapters, and coordination.',
+      difficulty: 'advanced',
+      estimatedMinutes: 80,
+      sections: [
+        { id: 's1-remote-machines', title: 'Agents on Remote Machines', description: 'Running across network boundaries — why locality matters for agents.', difficulty: 'advanced', readingMinutes: 10 },
+        { id: 's2-secure-tunneling', title: 'Secure Tunneling', description: 'SSH, teleport, and direct connections — secure access to remote environments.', difficulty: 'advanced', readingMinutes: 12 },
+        { id: 's3-message-translation', title: 'Message Translation', description: 'Adapting protocols between systems — format conversion at the boundary.', difficulty: 'advanced', readingMinutes: 10 },
+        { id: 's4-cross-machine', title: 'Cross-Machine Coordination', description: 'Distributed agent teams — multiple machines working as one.', difficulty: 'advanced', readingMinutes: 12 },
+      ],
+    },
+    {
+      id: 'c3-extensibility',
+      title: 'Extensibility',
+      description: 'Plugin architecture — extending agents after deployment.',
+      difficulty: 'advanced',
+      estimatedMinutes: 80,
+      sections: [
+        { id: 's1-plugin-architecture', title: 'Plugin Architecture', description: 'Extending agents after deployment — the framework for third-party capabilities.', difficulty: 'advanced', readingMinutes: 12 },
+        { id: 's2-discovery-loading', title: 'Discovery and Loading', description: 'Finding plugins at runtime — auto-discovery, registration, and initialization.', difficulty: 'advanced', readingMinutes: 10 },
+        { id: 's3-plugins-add-capabilities', title: 'Plugins That Add Capabilities', description: 'Tools, commands, and behaviors — what plugins can contribute.', difficulty: 'advanced', readingMinutes: 10 },
+        { id: 's4-plugin-lifecycle', title: 'Managing Plugin Lifecycle', description: 'Updates, conflicts, and deprecation — keeping plugins healthy over time.', difficulty: 'advanced', readingMinutes: 10 },
+      ],
+    },
+  ],
+}

@@ -1,0 +1,52 @@
+export const subject = {
+  id: 'production',
+  title: 'Production Readiness',
+  description: 'The difference between a demo and a reliable system — testing, observability, and the principles that make agents trustworthy.',
+  icon: '🚀',
+  colorHex: '#e11d48',
+  difficulty: 'advanced',
+  estimatedHours: 10,
+  prerequisites: ['trust-and-safety', 'state-and-memory', 'integration'],
+  chapters: [
+    {
+      id: 'c1-testing',
+      title: 'Testing Agents',
+      description: 'How to test autonomous systems — from unit tests to adversarial probing.',
+      difficulty: 'advanced',
+      estimatedMinutes: 80,
+      sections: [
+        { id: 's1-testing-tools', title: 'Testing Individual Tools', description: 'Isolated tool testing — verifying each capability works on its own.', difficulty: 'intermediate', readingMinutes: 10 },
+        { id: 's2-e2e-testing', title: 'End-to-End Session Testing', description: 'Validating complete workflows — from user input to final result.', difficulty: 'advanced', readingMinutes: 12 },
+        { id: 's3-multi-turn-tests', title: 'Multi-Turn Tests', description: 'Verifying conversation logic — testing the flow across multiple exchanges.', difficulty: 'advanced', readingMinutes: 10 },
+        { id: 's4-adversarial-testing', title: 'Adversarial Testing', description: 'Probing permission and security boundaries — testing what should fail.', difficulty: 'advanced', readingMinutes: 12 },
+      ],
+    },
+    {
+      id: 'c2-observability',
+      title: 'Observability',
+      description: 'Seeing inside running agents — telemetry, cost tracking, and diagnostics.',
+      difficulty: 'advanced',
+      estimatedMinutes: 80,
+      sections: [
+        { id: 's1-telemetry', title: 'Telemetry', description: 'Tracing agent actions from start to finish — distributed tracing and metrics.', difficulty: 'advanced', readingMinutes: 12 },
+        { id: 's2-cost-monitoring', title: 'Cost Monitoring', description: 'Tracking tokens, time, and money — understanding the economics of agent work.', difficulty: 'intermediate', readingMinutes: 10 },
+        { id: 's3-session-replay', title: 'Session Replay', description: 'Debugging from recorded transcripts — replaying agent decisions step by step.', difficulty: 'advanced', readingMinutes: 10 },
+        { id: 's4-health-checks', title: 'Health Checks', description: 'Agents that can diagnose themselves — the self-assessment pattern.', difficulty: 'advanced', readingMinutes: 10 },
+      ],
+    },
+    {
+      id: 'c3-principles',
+      title: 'Principles for Reliable Agents',
+      description: 'The design philosophy that separates demos from production systems.',
+      difficulty: 'intermediate',
+      estimatedMinutes: 100,
+      sections: [
+        { id: 's1-do-what-asked', title: 'Do What Was Asked, Nothing More', description: 'Avoiding feature creep — the discipline of minimal, focused changes.', difficulty: 'intermediate', readingMinutes: 10 },
+        { id: 's2-respect-patterns', title: 'Respect Existing Patterns', description: 'Convention over invention — building on what already works.', difficulty: 'intermediate', readingMinutes: 10 },
+        { id: 's3-clarity-over-cleverness', title: 'Prefer Clarity Over Cleverness', description: 'Readable, predictable behavior beats elegant but opaque solutions.', difficulty: 'intermediate', readingMinutes: 10 },
+        { id: 's4-default-to-asking', title: 'Default to Asking', description: 'When uncertain, check with a human — the safest default for autonomous systems.', difficulty: 'intermediate', readingMinutes: 10 },
+        { id: 's5-measure-twice', title: 'Measure Twice, Cut Once', description: 'The case for confirmation before irreversible action — why caution is strength.', difficulty: 'intermediate', readingMinutes: 10 },
+      ],
+    },
+  ],
+}

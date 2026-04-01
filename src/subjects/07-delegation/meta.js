@@ -1,0 +1,51 @@
+export const subject = {
+  id: 'delegation',
+  title: 'Delegation and Sub-Agents',
+  description: 'The art of knowing when one agent is not enough — spawning specialists, designing tasks, and avoiding common pitfalls.',
+  icon: '🔀',
+  colorHex: '#7c3aed',
+  difficulty: 'advanced',
+  estimatedHours: 12,
+  prerequisites: ['agent-runtime', 'state-and-memory'],
+  chapters: [
+    {
+      id: 'c1-when-to-delegate',
+      title: 'When to Delegate',
+      description: 'The decision framework for single-agent vs multi-agent approaches.',
+      difficulty: 'intermediate',
+      estimatedMinutes: 80,
+      sections: [
+        { id: 's1-single-agent-ceiling', title: 'The Single-Agent Ceiling', description: 'Tasks too large or complex for one agent — recognizing the limits.', difficulty: 'intermediate', readingMinutes: 10 },
+        { id: 's2-delegation-decision', title: 'The Delegation Decision', description: 'Do it yourself vs spawn a helper — a practical decision framework.', difficulty: 'intermediate', readingMinutes: 12 },
+        { id: 's3-types-specialists', title: 'Types of Specialists', description: 'Explorers, planners, verifiers, and guides — roles agents can fill.', difficulty: 'intermediate', readingMinutes: 10 },
+        { id: 's4-foreground-background', title: 'Foreground vs Background', description: 'Blocking and non-blocking delegation — when to wait and when to proceed.', difficulty: 'intermediate', readingMinutes: 10 },
+      ],
+    },
+    {
+      id: 'c2-designing-tasks',
+      title: 'Designing Delegated Tasks',
+      description: 'How to write effective sub-agent briefs and collect results.',
+      difficulty: 'advanced',
+      estimatedMinutes: 80,
+      sections: [
+        { id: 's1-sub-agent-brief', title: 'Writing a Sub-Agent Brief', description: 'Clear, complete, self-contained — the art of the perfect handoff.', difficulty: 'advanced', readingMinutes: 12 },
+        { id: 's2-scoping-capabilities', title: 'Scoping Capabilities', description: 'Giving a sub-agent only what it needs — the principle of minimal toolset.', difficulty: 'advanced', readingMinutes: 10 },
+        { id: 's3-isolation', title: 'Isolation', description: 'Giving each agent its own workspace — preventing interference between workers.', difficulty: 'advanced', readingMinutes: 12 },
+        { id: 's4-collecting-results', title: 'Collecting and Integrating Results', description: 'What comes back from a sub-agent and how to merge it into the main workflow.', difficulty: 'advanced', readingMinutes: 10 },
+      ],
+    },
+    {
+      id: 'c3-anti-patterns',
+      title: 'Delegation Anti-Patterns',
+      description: 'Common mistakes when delegating to sub-agents and how to avoid them.',
+      difficulty: 'advanced',
+      estimatedMinutes: 80,
+      sections: [
+        { id: 's1-over-delegation', title: 'Over-Delegation', description: 'Spawning agents for trivial tasks — the overhead that kills performance.', difficulty: 'intermediate', readingMinutes: 10 },
+        { id: 's2-duplicate-work', title: 'Duplicate Work', description: 'Parent and child solving the same problem — wasted tokens and time.', difficulty: 'intermediate', readingMinutes: 10 },
+        { id: 's3-context-overload', title: 'Context Overload', description: 'Giving too much information — when more context makes agents worse.', difficulty: 'advanced', readingMinutes: 10 },
+        { id: 's4-orphan-agents', title: 'Orphan Agents', description: 'Failing to track or clean up spawned helpers — resource leaks in multi-agent systems.', difficulty: 'advanced', readingMinutes: 12 },
+      ],
+    },
+  ],
+}
